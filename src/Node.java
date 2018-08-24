@@ -1,10 +1,10 @@
 /*
 * Node
-* Purpose: The goal of Node is
+* Purpose: The goal of Node is to learn how to use git and about nodes.
 * Author/s: Morgan Myhill
 * 8/24/18
 * On My Honor: MM
-* Collaborators:
+* Collaborators: Mx. Haynes
 */
 public class Node {
     //instance data:
@@ -51,5 +51,25 @@ public class Node {
     //I am testing something but I dont think that it will work
     //yay! created in alias of Intellij file and put into AT folder, I dont think this is what we were supposed to do:(
 
+    //Accessors (Third commit):
+    public Object getStore(){
+        return store;
+    }
+    public Object getLeft(){
+        return left.getStore();//by returning data that is stored in node, helps user to visualize org of nodes
+    }
+
+    public Object getRight(){
+        return right.getStore();
+    }
+
+    public Object getUp(){
+        return up.getStore();
+    }
+
+    public Object getDown(){
+        return down.getStore();
+    }
 }
+
 
